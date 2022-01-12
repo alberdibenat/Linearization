@@ -1,0 +1,29 @@
+&INPUT
+  LPROMPT = .F
+  FNAME = 'Initial_Dist.ini'
+  IPart = 1000000
+  Species = 'electrons'
+  Probe = .True.
+  Noise_reduc = .T
+  Cathode = .T
+  
+  Q_total = 1.0e-3
+  
+  Ref_zpos=0.0
+  Ref_clock=0.0E0
+  Ref_Ekin=0.0   
+  
+  Dist_z='g'  
+  sig_clock=0.003                       !3ps Bunch length at cathode
+  !sig_clock=0.020                              
+  C_sig_clock = 5.0                             
+  
+  Dist_pz='i', LE=0.241E-3                    
+  
+  Dist_x='r',  sig_x=0.5
+  Dist_px='g',
+  
+  Dist_y='r' , sig_y=0.5
+  Dist_py='g'
+ 
+ //
