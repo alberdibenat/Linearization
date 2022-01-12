@@ -1,2 +1,7 @@
 # Linearization
-Linarization of the longitudinal phase space of the bunch
+Linarization of the longitudinal phase space of the bunch.  
+
+There are two linearization methods, the horizontal vertical linearization (aims to minimize bunch length) and the horizontal linearization (aims to minimize energy spread) of any incoming bunch. Any of these two linearizations can be realized using two different ways:   
+
+1. The first one is to include the gun in the system (one tries to linearize a bunch with known gun parameters at emission). In this case a third order polynomial fit is performed in the gamma vs gun phase curve (for a given gun amplitude). Using the coefficients of such fit, one can analyze the curvature in phase space given by the RF fields in the gun and try to linearize it with further cavities. This method does not include space-charge forces along the beamline and neither in the gun (this later contribution is crucial for UED).  
+2. The gun parameters at emission are unknown, but the longitudinal phase-space of the bunch is known. This method consists on fitting a third order polinomial directly to the longitudinal phase-space of the bunch and extract from there the curvature parameters to be compensated by further cavities. This allows to include any previous contribution to the phase-space curvature to be linearized, for example the space charge induced curvature in the gun. This method is perfect for the UED set-up using an aperture: the SC forces play a big role in the beam-line between the cathode and the aperture, but are neglectable after the bunch has been collimated. Hence, one can use the longitudinal bunch profile after the aperture, fit a third order polynomial and perform the linearization without taking SC into account.
